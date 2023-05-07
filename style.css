@@ -57,7 +57,8 @@ body {
     
   }
   
-  .login-box input {
+  .login-box input,
+  .botton-content .botons {
     width: 100%;
     margin-bottom: 20px;
     transition: all 0.2s;
@@ -73,7 +74,7 @@ body {
     color: #fff;
     font-size: 16px;
   }
-  
+  /*
   .login-box input[type="submit"] {
     width: 100%;
     background: #1f53c5;
@@ -86,6 +87,28 @@ body {
   }
   
   .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #2b5b62;
+    color: #000;
+  }*/
+  
+  .botton-content .botons {
+    
+    color:#ffffff;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:100px;
+    padding-right:100px;
+    background: #1f53c5;
+    border: none;
+    margin: 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 70px;
+    
+  }
+
+  .botton-content .botons[type="submit"]:hover {
     cursor: pointer;
     background: #2b5b62;
     color: #000;
