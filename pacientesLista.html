@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, 
+    maximum-scale=1,0, minium-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleMenu.css">
+    <link rel="stylesheet" href="stylePacientes.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="text logo">
+            <span class="name">CUENCA</span>
+            <span class="profe">Hospital</span>
+            </div>
+            <i class="bx bx-menu toggle"></i>
+        </header>
+        <div class="menu-bar">
+            
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class="bx bx-search icon"></i>
+                    <input type="text" placeholder="buscar.....">
+                </li>
+                <ul clase="menu-links">
+                    <li class="nav-link">
+                        <a href="menu.html">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+
+                    </li>
+                 <!-- ----------------------------------------------------------- -->
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-bar-chart-alt-2 icon"></i>
+                            <span class="text nav-text">Pacientes</span>
+                        </a>
+
+                    </li>
+                 <!-- ----------------------------------------------------------- -->
+                   <li class="nav-link">
+                    <a href="#">
+                        <i class="bx bx-bell icon"></i>
+                        <span class="text nav-text">Notificaciones</span>
+                    </a>
+
+                   </li>
+                 <!-- ----------------------------------------------------------- -->
+                   <li class="nav-link">
+                    <a href="#">
+                      <i class="bx bx-pie-chart-alt icon"></i>
+                      <span class="text nav-text">Citas</span>
+                    </a>
+
+                   </li>
+                 <!-- ----------------------------------------------------------- -->
+                  <li class="nav-link">
+                     <a href="#">
+                      <i class="bx bx-heart icon"></i>
+                      <span class="text nav-text">Me gustas</span>
+                     </a>
+
+                  </li>
+                 <!-- ----------------------------------------------------------- -->
+                 <li class="nav-link">
+                    <a href="#">
+                      <i class="bx bx-wallet icon"></i>
+                      <span class="text nav-text">Agregar ficha</span>
+                    </a>
+
+                  </li>
+                 <!-- ----------------------------------------------------------- --> 
+
+                </ul>
+            </div>
+
+            <div class="botton-content ">
+                <li class="">
+                    <a href="#"> 
+                        <i class="bx bx-log-out icon"></i>
+                        <span class="text nav-text" onclick="volver()">Salir</span>
+                    </a>
+                </li>
+                <li class="mode">
+                   <div class="sun-moon">
+                       <i class="bx bx-moon icon moon"></i>
+                       <i class="bx bx-sun icon sun"></i>
+                  </div>
+                  <span class="modo-text text">Modo Oscuro</span>
+                  <div class="toggle-switch">
+                    <span class="switch"></span>
+                  </div>
+                </li>
+
+            </div>
+
+        </div>
+
+
+    </nav>
+
+    <div class="datatable-container display responsive nowrap">
+        <div class="header-tools">
+            <div class="tools">
+                <ul>
+                    <li><span><input type="checkbox" name="" id=""></span></li>
+                    <li><button>Nuevo</button></li>
+                    <li><button>Editar</button></li>
+                    <li><button>Remover</button></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" class="search-input">
+            </div>
+            
+        </div>
+        <table class="datatable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nombre/Apellido</th>
+                    <th>Condicion</th>
+                    <th>DNI</th>
+                    <th>Edad</th>
+                    <th>Genero</th>
+                    <th>Fecha de Ingreso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="table-checkbox"><input type="checkbox" name="" id=""></th>
+                    <td>Marcos Rivas</td>
+                    <td>-</td>
+                    <td>000000</td>
+                    <td>28</td>
+                    <td>F</td>
+                    <td>2020/05/01</td>
+                </tr>
+                <tr>
+                    <th class="table-checkbox"><input type="checkbox" name="" id=""></th>
+                    <td>""</td>
+                    <td>-</td>
+                    <td>000000</td>
+                    <td>28</td>
+                    <td>F</td>
+                    <td>2020/05/01</td>
+                </tr>
+                <tr>
+                    <th class="table-checkbox"><input type="checkbox" name="" id=""></th>
+                    <td>""</td>
+                    <td>-</td>
+                    <td>000000</td>
+                    <td>28</td>
+                    <td>M</td>
+                    <td>2020/05/01</td>
+                </tr>
+                <tr>
+                    <th class="table-checkbox"><input type="checkbox" name="" id=""></th>
+                    <td>Marcos Rivas</td>
+                    <td>-</td>
+                    <td>000000</td>
+                    <td>28</td>
+                    <td>M</td>
+                    <td>2020/05/01</td>
+                </tr>
+                <tr>
+                    <th class="table-checkbox"><input type="checkbox" name="" id=""></th>
+                    <td>Marcos Rivas</td>
+                    <td>-</td>
+                    <td>000000</td>
+                    <td>28</td>
+                    <td>F</td>
+                    <td>2020/05/01</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <div class="footer-tools">
+            <div class="list-items">
+                Show
+                <select name="n-entries" id="n-enties" class="n-entries">
+                    <option value="15">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+                entries
+            </div>
+            
+            <div class="pages">
+                <ul>
+                    <li><span class="active">1</span></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>4</button></li>
+                    <li><span>...</span></li>
+                    <li><button>9</button></li>
+                    <li><button>10</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+  <script src="script.js"></script>
+  <script src="scriptTable.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+  
+</body>
+</html>l
